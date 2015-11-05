@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+   <title>Lecture 11</title>
+   <script src="sweetalert.min.js"></script> 
+   <link rel="stylesheet" type="text/css" href="sweetalert.css">
+   <style>
+		body {
+			background-color: PapayaWhip;
+			color:white;
+		}
+		.body {
+			margin: 40px;
+   			width: 600px;
+   			overflow: hidden;
+   			}
+   		.head {
+   			padding: 3px 15px;
+   			display: inline-block;
+   			font: 40px sans-serif;
+   			background-color: LightSalmon;
+   			z-index: 1000;
+
+   		}	
+   		.content {
+		   	margin-top: -8px;
+		    margin-left: 10px;
+		    padding: 20px 0 0 0;
+		    background-color: white;
+		    color:black;
+		   		}
+   		ul {
+   			margin: 0;
+   			padding: 0;
+   			list-style: none;
+   		}
+		li {
+			background-color: #fff;
+			padding: 10px 40px;
+		    color: #464637;
+			position: relative;
+		    font-size: 20px;
+		    font-family: 'Roboto', sans-serif;
+		    font-weight: 300;
+		    cursor: move;
+			}
+
+		 .raised {
+		    background-color: LightGoldenrodYellow;
+		    opacity: .5;
+		    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
+   			 }
+
+		button {
+			color: #fff;
+		    width: 100%;
+		    border: none;
+		    outline: 0;
+		    opacity: .5;
+		    margin: 10px 0 0;
+		    transition: opacity .1s ease;
+		    cursor: pointer;
+		    background: #5F9EDF;
+		    padding: 10px 0;
+		    font-size: 20px;
+				}
+		button:hover {
+			opacity: 1;
+			}
+
+		#items i {
+			transition: opacity .2s;
+		    opacity: 0;
+		    display: block;
+		    cursor: pointer;
+		    color: #c00;
+		    top: 10px;
+		    right: 40px;
+		    position: absolute;
+		    font-style: italic;
+				}
+		#items li:hover i {
+			opacity: 1;
+			}
+   </style>
+</head>
+<body>
+<div class="body">
+	<div class="head">
+		Editable TODO list
+	</div>
+	<div class="content">
+	<ul id="items">
+	    <li>Home Work <i class="del">✖</i></li>
+	    <li>Make Dishes <i class="del">✖</i></li>
+	    <li>Feed the Cat <i class="del">✖</i></li>
+	    <li>Play the Dog <i class="del">✖</i></li>
+	</ul>
+	<button id="add">Add new</button>
+	</div>
+</div>	
+	<script src="script.js"></script>
+</body>
+</html>
