@@ -22,7 +22,6 @@
  }
   items.addEventListener('dragstart', function (evt){
       element = evt.target;
-      var nextElement = element.nextSibling;
       evt.dataTransfer.effectAllowed = 'link';
       evt.dataTransfer.setData('Text', element.textContent);
       items.addEventListener('dragover', over, false);
